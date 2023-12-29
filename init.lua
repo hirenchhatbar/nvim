@@ -34,8 +34,12 @@ require("lazy").setup({
     require "plugins.telescope",
     require "plugins.bufferline",
     require "plugins.lualine",
-    require "plugins.mason",
     require "plugins.comment",
+    require "plugins.nvim-lspconfig",
+    require "plugins.mason",
+    require "plugins.mason-lspconfig",
+    require "plugins.nvim-cmp",
+    require "plugins.friendly-snippets",
     require "colorschemes.tokyonight",
 }, opts)
 
@@ -47,10 +51,14 @@ require("lazy").setup({
 -- plugins.init
 require "plugins.init.bufferline"
 require "plugins.init.lualine"
-require "plugins.init.mason"
 require "plugins.init.comment"
 require "plugins.init.which-key"
 require "plugins.init.telescope"
+require "plugins.init.nvim-lspconfig"
+require "plugins.init.mason"
+require "plugins.init.mason-lspconfig"
+require "plugins.init.nvim-cmp"
+require "plugins.init.friendly-snippets"
 
 
 -- colorschemes.init
