@@ -40,6 +40,10 @@ require("lazy").setup({
     require "plugins.mason-lspconfig",
     require "plugins.nvim-cmp",
     require "plugins.friendly-snippets",
+    require "plugins.mini-pairs",
+    require "plugins.mini-surround",
+    require "plugins.nvim-treesitter",
+    require "plugins.dashboard-nvim",
     require "colorschemes.tokyonight",
 }, opts)
 
@@ -59,6 +63,9 @@ require "plugins.init.mason"
 require "plugins.init.mason-lspconfig"
 require "plugins.init.nvim-cmp"
 require "plugins.init.friendly-snippets"
+require "plugins.init.mini-pairs"
+require "plugins.init.mini-surround"
+require "plugins.init.nvim-treesitter"
 
 
 -- colorschemes.init
