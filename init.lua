@@ -50,6 +50,7 @@ require "plugins.init.lualine"
 require "plugins.init.mason"
 require "plugins.init.comment"
 require "plugins.init.which-key"
+require "plugins.init.telescope"
 
 
 -- colorschemes.init
