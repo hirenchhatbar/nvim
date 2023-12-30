@@ -25,6 +25,7 @@ return {
             b = { builtin.buffers, "Find buffers" },
             h = { builtin.help_tags, "Find help" },
             c = { "<cmd>bdelete<cr>", "Close file without saving" },
+            s = { "<cmd>write<cr>", "Save file" },
           },
           s = {
             name = "Search", -- optional group name
