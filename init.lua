@@ -36,6 +36,7 @@ require("lazy").setup({
     require "plugins.friendly-snippets",
     require "plugins.mini-pairs",
     require "plugins.mini-surround",
+    require "plugins.lsp-signature",
     require "plugins.nvim-treesitter",
     require "plugins.nvim-treesitter-textobjects",
     require "plugins.dashboard-nvim",

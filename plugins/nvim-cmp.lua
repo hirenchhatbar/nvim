@@ -10,8 +10,11 @@ return {
       "saadparwaiz1/cmp_luasnip", -- for autocompletion
       "rafamadriz/friendly-snippets", -- useful snippets
       "onsails/lspkind.nvim", -- vs-code like pictograms
+      -- "hrsh7th/cmp-nvim-lsp-signature-help", -- function signature help while typing
     },
     config = function()
+      vim.api.nvim_set_hl(0, "CmpGhostText", { link = "Comment", default = true })
+
       local cmp = require("cmp")
 
       local luasnip = require("luasnip")
@@ -45,6 +48,7 @@ return {
           { name = "luasnip" }, -- snippets
           { name = "buffer" }, -- text within current buffer
           { name = "path" }, -- file system paths
+          -- { name = 'nvim_lsp_signature_help' } -- function signature help while typing
         }),
         -- configure lspkind for vs-code like pictograms in completion menu
         formatting = {
@@ -52,6 +56,11 @@ return {
             maxwidth = 50,
             ellipsis_char = "...",
           }),
+        },
+        experimental = {
+          ghost_text = {
+            hl_group = "CmpGhostText",
+          },
         },
       })
     end,
