@@ -5,12 +5,8 @@ end
 
 package.path = package.path .. ';' .. script_path() ..'/?.lua'
 
-
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
-
-vim.opt.termguicolors = true
-
+require "options.init"
+require "keymaps.init"
 
 -- init https://github.com/folke/lazy.nvim
 
@@ -30,7 +26,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-    require "plugins.which-key",
     require "plugins.telescope",
     require "plugins.bufferline",
     require "plugins.lualine",
@@ -43,7 +38,10 @@ require("lazy").setup({
     require "plugins.mini-pairs",
     require "plugins.mini-surround",
     require "plugins.nvim-treesitter",
+    require "plugins.nvim-treesitter-textobjects",
     require "plugins.dashboard-nvim",
+    -- require "plugins.vim-maximizer",
+    require "plugins.which-key",
     require "colorschemes.tokyonight",
 }, opts)
 
