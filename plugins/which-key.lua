@@ -26,6 +26,13 @@ return {
             h = { builtin.help_tags, "find [h]elp" },
             c = { "<cmd>bdelete<cr>", "[c]lose file without saving" },
           },
+          s = {
+            name = "[s]earch", -- optional group name
+            t = { "<cmd>Telescope treesitter<cr>", "[t]reesitter" },
+            k = { "<cmd>Telescope keymaps<cr>", "keymap[s]" },
+            h = { "<cmd>Telescope man_pages<cr>", "[h]elp / man pages" },
+            s = { "<cmd>Telescope lsp_document_symbols<cr>", "[s]ymbols" },
+          },
           q = {
             name = "[q]uit", -- optional group name
             q = { "<cmd>quit<cr>", "[q]uit" },
