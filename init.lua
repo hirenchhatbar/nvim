@@ -39,6 +39,8 @@ require("lazy").setup({
     require "plugins.nvim-treesitter",
     require "plugins.nvim-treesitter-textobjects",
     require "plugins.dashboard-nvim",
+    require "plugins.symbols-outline",
+    require "plugins.none-ls",
     require "plugins.which-key",
     require "colorschemes.tokyonight",
 }, opts)
