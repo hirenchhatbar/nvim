@@ -32,7 +32,6 @@ require("lazy").setup({
     require "plugins.comment",
     require "plugins.nvim-lspconfig",
     require "plugins.mason",
-    require "plugins.mason-lspconfig",
     require "plugins.nvim-cmp",
     require "plugins.friendly-snippets",
     require "plugins.mini-pairs",
@@ -40,7 +39,6 @@ require("lazy").setup({
     require "plugins.nvim-treesitter",
     require "plugins.nvim-treesitter-textobjects",
     require "plugins.dashboard-nvim",
-    -- require "plugins.vim-maximizer",
     require "plugins.which-key",
     require "colorschemes.tokyonight",
 }, opts)

@@ -19,25 +19,25 @@ return {
 
         wk.register({
           f = {
-            name = "[f]ile", -- optional group name
-            f = { "<cmd>Telescope find_files no_ignore=true hidden=true<cr>", "[f]ind file" },
-            g = { builtin.live_grep, "find [g]rep" },
-            b = { builtin.buffers, "find [b]uffers" },
-            h = { builtin.help_tags, "find [h]elp" },
-            c = { "<cmd>bdelete<cr>", "[c]lose file without saving" },
+            name = "File/Find", -- optional group name
+            f = { "<cmd>Telescope find_files no_ignore=true hidden=true<cr>", "Find file" },
+            g = { builtin.live_grep, "Find grep" },
+            b = { builtin.buffers, "Find buffers" },
+            h = { builtin.help_tags, "Find help" },
+            c = { "<cmd>bdelete<cr>", "Close file without saving" },
           },
           s = {
-            name = "[s]earch", -- optional group name
-            t = { "<cmd>Telescope treesitter<cr>", "[t]reesitter" },
-            k = { "<cmd>Telescope keymaps<cr>", "keymap[s]" },
-            h = { "<cmd>Telescope man_pages<cr>", "[h]elp / man pages" },
-            s = { "<cmd>Telescope lsp_document_symbols<cr>", "[s]ymbols" },
+            name = "Search", -- optional group name
+            t = { "<cmd>Telescope treesitter<cr>", "Treesitter" },
+            k = { "<cmd>Telescope keymaps<cr>", "Keymaps" },
+            h = { "<cmd>Telescope man_pages<cr>", "Help / man pages" },
+            s = { "<cmd>Telescope lsp_document_symbols<cr>", "Symbols" },
           },
           q = {
-            name = "[q]uit", -- optional group name
-            q = { "<cmd>quit<cr>", "[q]uit" },
-            a = { "<cmd>quitall<cr>", "quit [a]ll" },
-            x = { "<cmd>q!<cr>", "quit without saving" },
+            name = "Quit", -- optional group name
+            q = { "<cmd>quit<cr>", "Quit" },
+            a = { "<cmd>quitall<cr>", "Quit all" },
+            x = { "<cmd>q!<cr>", "Quit without saving" },
           },
         }, { prefix = "<leader>" })
     end,
