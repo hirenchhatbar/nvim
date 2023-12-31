@@ -21,11 +21,11 @@ return {
           f = {
             name = "File/Find", -- optional group name
             f = { "<cmd>Telescope find_files no_ignore=true hidden=true<cr>", "Find file" },
+            r = { "<cmd>Telescope old_files", "Recent file" },
             g = { builtin.live_grep, "Find grep" },
             b = { builtin.buffers, "Find buffers" },
             h = { builtin.help_tags, "Find help" },
-            c = { "<cmd>bdelete<cr>", "Close file without saving" },
-            s = { "<cmd>write<cr>", "Save file" },
+            w = { "<cmd>write<cr>", "Write(save) file" },
           },
           s = {
             name = "Search", -- optional group name
@@ -33,6 +33,15 @@ return {
             k = { "<cmd>Telescope keymaps<cr>", "Keymaps" },
             h = { "<cmd>Telescope man_pages<cr>", "Help / man pages" },
             s = { "<cmd>Telescope lsp_document_symbols<cr>", "Symbols" },
+          },
+          b = {
+            name = "Buffer", -- optional group name
+            h = { "<cmd>bfirst<cr>", "First buffer" },
+            j = { "<cmd>bnext<cr>", "Next buffer" },
+            k = { "<cmd>bprevious<cr>", "Previous buffer" },
+            l = { "<cmd>blast<cr>", "Previous buffer" },
+            d = { "<cmd>bdelete<cr>", "Delete buffer" },
+            a = { "<cmd>badd<cr>", "Add buffer" },
           },
           q = {
             name = "Quit", -- optional group name
