@@ -20,7 +20,11 @@ return {
             sources = {
                 null_ls.builtins.formatting.stylua,
                 null_ls.builtins.completion.spell,
-            },
+                null_ls.builtins.code_actions.gomodifytags,
+                null_ls.builtins.code_actions.impl,
+                null_ls.builtins.formatting.goimports,
+                null_ls.builtins.formatting.gofumpt,
+            }
         })
     end,
 }

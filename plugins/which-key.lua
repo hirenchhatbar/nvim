@@ -21,7 +21,7 @@ return {
           f = {
             name = "File/Find", -- optional group name
             f = { "<cmd>Telescope find_files no_ignore=true hidden=true<cr>", "Find file" },
-            r = { "<cmd>Telescope old_files", "Recent file" },
+            r = { "<cmd>Telescope oldfiles<cr>", "Recent file" },
             g = { builtin.live_grep, "Find grep" },
             b = { builtin.buffers, "Find buffers" },
             h = { builtin.help_tags, "Find help" },
