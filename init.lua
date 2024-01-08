@@ -42,6 +42,7 @@ require("lazy").setup({
     require "plugins.dashboard-nvim",
     require "plugins.symbols-outline",
     require "plugins.conform",
+    require "plugins.lint",
     require "plugins.toggleterm",
     require "plugins.which-key",
     require "colorschemes.tokyonight",
