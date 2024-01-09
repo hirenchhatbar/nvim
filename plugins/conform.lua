@@ -21,6 +21,8 @@ return {
                     graphql = { "prettier" },
                     lua = { "stylua" },
                     php = { "php_cs_fixer" },
+                    sh = { "shfmt" },
+                    bash = { "shfmt" },
                     -- Conform will run multiple formatters sequentially
                     go = { "goimports", "gofmt" },
                     -- Use a sub-list to run only the first available formatter
